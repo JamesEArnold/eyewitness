@@ -4,9 +4,8 @@
   "description": "A Localstack SQS Dashboard",
   "main": "dist/index.js",
   "scripts": {
-    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
-    "prestart": "npm run build",
+    "prestart": "docker-compose up -d && npm run build",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
