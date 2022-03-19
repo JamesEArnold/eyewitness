@@ -3,7 +3,7 @@
       "allowSyntheticDefaultImports": true,
       "allowJs": false,
       "baseUrl": "./",
-      "module": "commonjs",
+      "module": "CommonJS",
       "esModuleInterop": true,
       "resolveJsonModule": true,
       "noImplicitReturns": true,
@@ -12,6 +12,7 @@
       "moduleResolution": "node",
       "sourceMap": true,
       "outDir": "dist",
+      "rootDir": "src",
       "paths": {
         "@/*": ["src/*"],
         "*": [
@@ -21,7 +22,7 @@
       "strictNullChecks": true,
   },
   "include": [
-      "src/**/*"
+      "src/**/*",
   ],
   "exclude": [ "node_modules" ]
 }
