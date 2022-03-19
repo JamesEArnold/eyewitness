@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "prestart": "docker-compose up -d && npm run build",
-    "start": "node .",
+    "prestart": "docker-compose -f ./docker/docker-compose.yml up -d && npm run build",
+    "start": "node -r ts-node/register -r tsconfig-paths/register dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,9 +27,11 @@
     "express": "^4.17.3",
     "helmet": "^5.0.2",
     "ts-node": "^10.6.0",
-    "tsconfig-paths": "^3.13.0"
+    "tsconfig-paths": "^3.13.0",
+    "winston": "^3.6.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.1",
     "@types/node": "^16.11.26",
