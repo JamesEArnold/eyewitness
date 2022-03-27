@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<script lang="ts" setup>
+import QueueList from '@/views/QueueList.vue';
 </script>
 
 <template>
-  <div>dummy</div>
+  <QueueList />
 </template>
 
 <style lang="scss">
-
 </style>
