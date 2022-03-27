@@ -46,6 +46,9 @@ eyewitness/
 ┃   ┣━━ src/
 ┃       ┃
 ┃       ┣━━ components/   # Reusable components
+┃       ┣━━ domain/       # Type definitions and contracts
+┃       ┣━━ infra/        # Implementations of the domain types and services
+┃       ┣━━ mocks/        # Mock adaptors to use for test implementations
 ┃       ┣━━ public/       # Public assets for the front-end
 ┃       ┣━━ types/        # Type declarations
 ┃       ┣━━ App.vue       # Main Vue application
