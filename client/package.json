@@ -2,7 +2,7 @@
   "name": "eyewitness",
   "version": "0.0.0",
   "scripts": {
-    "dev": "concurrently \"npm --prefix ../server run start\" \"vite\"",
+    "dev": "concurrently \"npm --prefix ../server run start\" \"export $(cat .dev.env | xargs) && vite\"",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "pinia": "^2.0.11",
     "vue": "^3.2.31"
   },
