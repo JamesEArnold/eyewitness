@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import QueueList from '@/views/QueueList.vue';
+import QueueList from '@/components/QueueList.vue';
 </script>
 
 <template>
